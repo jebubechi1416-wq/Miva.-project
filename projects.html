@@ -88,15 +88,9 @@
 
     </div>
   </section>
-  <div class="floating-player">
-  <div class="cord"></div>
-  <div class="player-card">
-    <span class="player-label">Now Playing</span>
-    <audio controls>
-      <source src="audio/song.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+
+</div>
+</div>
 </div>
 
   <section class="section-alt" id="video-demo">
@@ -120,5 +114,15 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/player.js"></script>
 </body>
+<div class="floating-player" id="floating-player">
+  <div class="cord"></div>
+  <div class="player-card">
+    <span class="player-label" id="player-track-label">Now Playing · Track 1</span>
+    <audio id="bg-audio">
+      <source id="bg-audio-source" src="audio/song1.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
 </html>
