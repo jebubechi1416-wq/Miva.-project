@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ekeh Joshua Ebubechi</title>
+<meta name="description" content="Cybersecurity lab projects by Ekeh Joshua Ebubechi: Nmap network discovery, ClamAV antivirus configuration, GPG encryption, and OSINT research.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> joshua@portfolio</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <p class="eyebrow">Lab reports</p>
+      <h1>Projects</h1>
+      <p style="max-width:60ch; color:var(--muted);">Hands-on cybersecurity work completed in controlled lab environments — each one framed here as a scan report, the way a security tool itself might present it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid-3">
+
+      <article class="scan-card">
+        <img src="images/project-nmap.svg" alt="Terminal-style graphic representing a network scan with connected nodes">
+        <div class="scan-card-body">
+          <span class="scan-status">● scan complete</span>
+          <h3>Network Discovery with Nmap</h3>
+          <p>Performed network discovery, port scanning, and operating system detection using Kali Linux in a controlled lab environment.</p>
+          <div class="scan-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">Repository ↗</a>
+            <a href="#video-demo">Watch reference ↓</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="scan-card">
+        <img src="images/project-clamav.svg" alt="Terminal-style graphic of a shield with a checkmark representing antivirus scanning">
+        <div class="scan-card-body">
+          <span class="scan-status">● 0 infected files</span>
+          <h3>ClamAV Antivirus Configuration</h3>
+          <p>Installed and configured ClamAV, updated malware signatures, scheduled automated scans, and verified detection using the EICAR test file.</p>
+          <div class="scan-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="scan-card">
+        <img src="images/project-gpg.svg" alt="Terminal-style graphic of a padlock representing GPG encryption">
+        <div class="scan-card-body">
+          <span class="scan-status">● keys verified</span>
+          <h3>GPG Encryption</h3>
+          <p>Generated RSA public and private keys, encrypted confidential messages, and successfully decrypted them using GPG.</p>
+          <div class="scan-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="scan-card">
+        <img src="images/project-osint.svg" alt="Terminal-style graphic of a magnifying glass representing OSINT research">
+        <div class="scan-card-body">
+          <span class="scan-status">● findings logged</span>
+          <h3>OSINT Research</h3>
+          <p>Conducted ethical Open Source Intelligence investigations using publicly available information.</p>
+          <div class="scan-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section-alt" id="video-demo">
+    <div class="container">
+      <p class="eyebrow">Reference material</p>
+      <h2>Nmap in practice</h2>
+      <p style="max-width:60ch; color:var(--muted);">A reference tutorial I studied while working on the network discovery project above.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/4t4kBkMsDbQ" title="Nmap Tutorial to find Network Vulnerabilities" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© <span id="footer-year"></span> Ekeh Joshua Ebubechi. Built for academic purposes.</span>
+    <span class="status-pill"><span class="dot"></span> connection encrypted</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

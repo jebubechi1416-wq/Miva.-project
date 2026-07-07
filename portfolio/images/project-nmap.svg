@@ -1,0 +1,25 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="340" fill="#0B1220"/>
+  <g opacity="0.15" stroke="#2FBF8F">
+    <circle cx="300" cy="170" r="60" fill="none"/>
+    <circle cx="300" cy="170" r="100" fill="none"/>
+    <circle cx="300" cy="170" r="140" fill="none"/>
+  </g>
+  <g fill="#2FBF8F">
+    <circle cx="300" cy="170" r="6"/>
+    <circle cx="380" cy="120" r="6"/>
+    <circle cx="220" cy="110" r="6"/>
+    <circle cx="150" cy="200" r="6"/>
+    <circle cx="420" cy="220" r="6"/>
+    <circle cx="260" cy="250" r="6"/>
+  </g>
+  <g stroke="#2FBF8F" stroke-width="1.5" opacity="0.6">
+    <line x1="300" y1="170" x2="380" y2="120"/>
+    <line x1="300" y1="170" x2="220" y2="110"/>
+    <line x1="300" y1="170" x2="150" y2="200"/>
+    <line x1="300" y1="170" x2="420" y2="220"/>
+    <line x1="300" y1="170" x2="260" y2="250"/>
+  </g>
+  <text x="30" y="300" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#E8A33D">$ nmap -sV -O 192.168.1.0/24</text>
+  <text x="30" y="35" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#6B7686">host_discovery.log</text>
+</svg>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ekeh Joshua Ebubechi</title>
+<meta name="description" content="Get in touch with Ekeh Joshua Ebubechi — cybersecurity student, Django developer, and music instructor.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> joshua@portfolio</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <p class="eyebrow">Secure transmission</p>
+      <h1>Contact</h1>
+      <p style="max-width:60ch; color:var(--muted);">Have a question, an opportunity, or just want to talk cybersecurity or music? Send a message below.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid-2">
+
+      <div class="form-panel">
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="field-name">Name</label>
+            <input type="text" id="field-name" name="name" autocomplete="name">
+            <span class="field-error"></span>
+          </div>
+
+          <div class="field">
+            <label for="field-email">Email address</label>
+            <input type="email" id="field-email" name="email" autocomplete="email">
+            <span class="field-error"></span>
+          </div>
+
+          <div class="field">
+            <label for="field-phone">Phone number</label>
+            <input type="tel" id="field-phone" name="phone" autocomplete="tel" placeholder="Digits only, e.g. 07064373261">
+            <span class="field-error"></span>
+          </div>
+
+          <div class="field">
+            <label for="field-message">Message</label>
+            <textarea id="field-message" name="message"></textarea>
+            <span class="field-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div>
+        <p class="eyebrow">Direct channels</p>
+        <ul class="contact-info-list">
+          <li><span class="label">Email</span> <a href="mailto:j.ebubechi1416@miva.edu.ng">j.ebubechi1416@miva.edu.ng</a></li>
+          <li><span class="label">Phone</span> <a href="tel:07064373261">0706 437 3261</a></li>
+          <li><span class="label">LinkedIn</span> <a href="#">Add your LinkedIn profile</a></li>
+          <li><span class="label">GitHub</span> <a href="#">Add your GitHub profile</a></li>
+        </ul>
+
+        <div class="card" style="margin-top:28px;">
+          <p class="eyebrow">Note</p>
+          <p style="margin:0; color:var(--muted); font-size:0.92rem;">This form validates on submit: all fields are required, the email must be correctly formatted, and the phone number must contain digits only. No data leaves this page — it's a front-end demo for academic purposes.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© <span id="footer-year"></span> Ekeh Joshua Ebubechi. Built for academic purposes.</span>
+    <span class="status-pill"><span class="dot"></span> connection encrypted</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="340" fill="#0B1220"/>
+  <g transform="translate(230,50)" fill="none" stroke="#2FBF8F" stroke-width="4">
+    <circle cx="60" cy="60" r="55"/>
+    <line x1="98" y1="98" x2="145" y2="145"/>
+  </g>
+  <g transform="translate(230,50)" opacity="0.7" fill="#E8A33D">
+    <circle cx="40" cy="45" r="4"/>
+    <circle cx="75" cy="35" r="4"/>
+    <circle cx="60" cy="80" r="4"/>
+    <circle cx="30" cy="75" r="4"/>
+  </g>
+  <text x="30" y="300" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#E8A33D">$ theHarvester -d target.com -b all</text>
+  <text x="30" y="35" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#6B7686">osint_findings.log</text>
+</svg>

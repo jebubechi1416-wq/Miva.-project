@@ -1,0 +1,11 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="340" fill="#0B1220"/>
+  <g transform="translate(255,55)">
+    <rect x="0" y="70" width="90" height="75" rx="8" fill="none" stroke="#2FBF8F" stroke-width="4"/>
+    <path d="M15 70 L15 40 a30 30 0 0 1 60 0 L75 70" fill="none" stroke="#2FBF8F" stroke-width="4"/>
+    <circle cx="45" cy="105" r="9" fill="#E8A33D"/>
+    <line x1="45" y1="114" x2="45" y2="130" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="30" y="300" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#E8A33D">$ gpg --encrypt --recipient joshua</text>
+  <text x="30" y="35" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#6B7686">key_exchange.log</text>
+</svg>

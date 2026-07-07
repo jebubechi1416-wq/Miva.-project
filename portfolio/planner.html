@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Ekeh Joshua Ebubechi</title>
+<meta name="description" content="Interactive academic task planner: add, complete, and delete study tasks.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-brand"><span class="dot" aria-hidden="true"></span> joshua@portfolio</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <p class="eyebrow">Task queue</p>
+      <h1>Academic Planner</h1>
+      <p style="max-width:60ch; color:var(--muted);">A running queue of study tasks, labs, and deadlines. Add a task, mark it complete when it's done, or clear it out entirely.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="planner-panel">
+        <div class="planner-panel-header">
+          <span class="scan-status">● queue active</span>
+          <div class="progress-track" role="progressbar" aria-label="Tasks completed" aria-valuemin="0" aria-valuemax="100" id="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-label">0%</span>
+        </div>
+
+        <form id="task-form" class="planner-input-row" aria-label="Add a new task">
+          <label for="task-input" class="visually-hidden" style="position:absolute; left:-9999px;">Task description</label>
+          <input type="text" id="task-input" placeholder="e.g. Finish Cloud Security IAM assignment" required>
+
+          <label for="task-priority" class="visually-hidden" style="position:absolute; left:-9999px;">Priority</label>
+          <select id="task-priority">
+            <option value="low">Low priority</option>
+            <option value="medium" selected>Medium priority</option>
+            <option value="high">High priority</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Add task</button>
+        </form>
+      </div>
+
+      <div class="planner-toolbar">
+        <div class="filter-tabs" role="tablist" aria-label="Filter tasks">
+          <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All <span id="tab-count-all">0</span></button>
+          <button type="button" class="filter-tab" data-filter="active" role="tab" aria-selected="false">Active <span id="tab-count-active">0</span></button>
+          <button type="button" class="filter-tab" data-filter="done" role="tab" aria-selected="false">Done <span id="tab-count-done">0</span></button>
+        </div>
+        <button type="button" id="clear-done-btn" class="btn-text">Clear completed</button>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="planner-empty" class="planner-empty" style="display:none;">No tasks queued. Add one above to get started.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© <span id="footer-year"></span> Ekeh Joshua Ebubechi. Built for academic purposes.</span>
+    <span class="status-pill"><span class="dot"></span> connection encrypted</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>

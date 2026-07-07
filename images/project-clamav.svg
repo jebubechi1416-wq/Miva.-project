@@ -1,0 +1,10 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="340" fill="#0B1220"/>
+  <g transform="translate(240,60)">
+    <path d="M60 0 L120 25 L120 100 C120 150 90 180 60 195 C30 180 0 150 0 100 L0 25 Z" fill="none" stroke="#2FBF8F" stroke-width="4"/>
+    <path d="M35 100 L55 120 L90 75" fill="none" stroke="#E8A33D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="30" y="300" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#E8A33D">$ freshclam &amp;&amp; clamscan -r /home</text>
+  <text x="30" y="35" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#6B7686">malware_scan.log</text>
+  <text x="570" y="300" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#2FBF8F" text-anchor="end">0 infected files</text>
+</svg>
