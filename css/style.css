@@ -452,6 +452,59 @@ table.data-table{
 }
 .status-pill .dot{ width: 8px; height: 8px; border-radius: 50%; background: var(--signal); }
 
+/* Floating hanging music player */
+.floating-player{
+  position: fixed;
+  top: 0;
+  right: 40px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+  animation: swing 4s ease-in-out infinite;
+}
+.floating-player .cord{
+  width: 2px;
+  height: 34px;
+  background: var(--muted);
+}
+.floating-player .player-card{
+  background: var(--ink);
+  border: 1px solid var(--line-dark);
+  border-radius: 0 0 10px 10px;
+  padding: 14px 16px 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+  width: 220px;
+}
+.floating-player .player-label{
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--signal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  display: block;
+}
+.floating-player audio{
+  width: 100%;
+  height: 32px;
+}
+
+@keyframes swing{
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .floating-player{ animation: none; }
+}
+
+@media (max-width: 600px){
+  .floating-player{ right: 16px; }
+  .floating-player .player-card{ width: 160px; }
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
